@@ -16,7 +16,6 @@ export const ButtonContainer = styled.button`
       ? props.theme.colors[props.backGr]
       : props.theme.colors.primary};
   margin: ${(props) => (props.margin ? props.margin : "4px 0px")};
-
   padding: 5px 20px;
   border: ${(props) =>
     props.backGrWhite ? props.theme.colors.secondary : "white"};

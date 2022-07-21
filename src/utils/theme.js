@@ -3,7 +3,6 @@ export const colors = {
   secondary: "#1e7ebf",
   white: "white",
   black: "#000000",
-  blackSpace: "#242423",
   red: "#961d33",
   gray: "#a3a2a2",
   darkRed: "#961d33",
@@ -12,7 +11,6 @@ export const colors = {
   darkGrey: "#1f1e1e",
   grey: "grey",
   textColor: `rgb(78, 75, 75)`,
-  hoverColor: "#1A4A8D",
   bg: {
     primary: "#FFFFFF",
     secondary: "#1f1e1e"
@@ -20,16 +18,9 @@ export const colors = {
   text: {
     primary: "white",
     secondary: "#333130",
-    disabled: "#9C9C9C",
-    inverse: "#FFFFFF",
     error: "#D0421B",
     success: "#138000"
   }
-};
-export const fonts = {
-  body: "Oswald_400Regular",
-  heading: "Lato_400Regular",
-  monospace: "Oswald_400Regular"
 };
 
 export const fontSizes = {
@@ -50,7 +41,6 @@ export const space = ["0px", "4px", "8px", "16px", "32px", "64px"];
 export const appTheme = {
   colors,
   sizes,
-  fonts,
   fontSizes,
   space
 };

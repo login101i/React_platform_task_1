@@ -1,6 +1,4 @@
-import React from "react";
-
-import { MainContainer, Container, LeftContainer } from "./CustomInput.styles";
+import { MainContainer, Container } from "./CustomInput.styles";
 
 export const CustomInput = ({
   width,

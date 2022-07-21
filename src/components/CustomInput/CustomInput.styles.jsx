@@ -14,7 +14,6 @@ export const Container = styled.input`
   display: flex;
   align-items: center;
   align-self: center;
-
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius + "px" : "none"};
   height: ${(props) => (props.height ? props.height : "40px")};

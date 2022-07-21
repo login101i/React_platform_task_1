@@ -7,15 +7,12 @@ export const useFetchVideo = (id) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const { user } = useContext(AuthContext);
-  const [videoData, setVideoData] = useState("");
-  const [isReadyToPlay, setReadyToPlay] = useState(false);
   const { dispatch } = useContext(MediaContext);
 
   const navigate = useNavigate();
 
   const fetchData = (id) => {
-    setVideoData("");
-    setIsLoading(true);
+ setIsLoading(true);
     fetch("https://thebetter.bsgroup.eu/Media/GetMediaPlayInfo", {
       method: "POST",
       headers: {
@@ -29,8 +26,6 @@ export const useFetchVideo = (id) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setVideoData(data);
-        setReadyToPlay(true);
         console.log("Success " + JSON.stringify(data));
         dispatch({
           type: "MEDIA_SUCCESS",

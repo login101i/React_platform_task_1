@@ -11,9 +11,9 @@ import { appTheme } from "./utils/theme";
 import { Navbar } from "./components";
 import { Container } from "./App.styles";
 import { screensSizes } from "./utils/screenSizes";
+
 export const App = () => {
   const isMobile = useMediaQuery({ maxWidth: screensSizes.md });
-
   return (
     <ThemeProvider theme={appTheme}>
       <Container isMobile={isMobile}>

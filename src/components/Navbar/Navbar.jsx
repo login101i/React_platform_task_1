@@ -2,11 +2,10 @@ import { useContext } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { Link } from "react-router-dom";
-import { Button, Flex, Text } from "..";
+import { Button, Text } from "..";
 import { AuthContext } from "../../context/AuthContext";
 import { screensSizes } from "../../utils/screenSizes";
 import { useFetchLogoutUser } from "./hooks/useFetchLogoutUser";
-
 import {
   MainContainer,
   Wrapper,
@@ -18,7 +17,6 @@ export const Navbar = () => {
   const { user } = useContext(AuthContext);
   const isMobile = useMediaQuery({ maxWidth: screensSizes.md });
   const { fetchData } = useFetchLogoutUser();
-  // add comment to make useRequest
 
   return (
     <MainContainer>

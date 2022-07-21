@@ -1,4 +1,3 @@
-import React, { useContext, useState, useEffect } from "react";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import { Flex, Text, CustomIcon } from "..";
 import {
