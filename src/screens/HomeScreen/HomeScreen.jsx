@@ -22,7 +22,7 @@ export const HomeScreen = () => {
 
   useEffect(() => {
     if (!user) {
-      navigate("/login");
+      navigate("/splash");
       return;
     }
     fetchFirstLilst();
